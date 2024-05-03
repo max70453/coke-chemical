@@ -3275,7 +3275,7 @@ Content Divider Css Style
     font-size: 34px;
     font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 14px;
+/*    margin-bottom: 14px;*/
     margin-top: 0;
     text-transform: uppercase;
 }
@@ -7015,4 +7015,9 @@ M > P Css Style
 .cart{
   height: 500px; 
   overflow: auto;
+}
+
+.hidden
+{
+    display: none !important;
 }

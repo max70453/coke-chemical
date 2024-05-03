@@ -36,7 +36,6 @@
           }
       });
 
-
       $(document).ready(function(){
           var dropDown = $('.dropdown');
           //Show dropdown on hover only for desktop devices
@@ -674,6 +673,18 @@
         $(linkItem).addClass('active');
       }
   })
+
+    $('.fa-shopping-bag').on('click', () => {
+      jQuery.fn.isEmpty = function() {
+        return !$.trim(this.html());
+      };
+      console.log()
+      if($('.menu-cart').isEmpty())
+        $('.cart').addClass('hidden');
+      else
+        $('.cart').removeClass('hidden');
+    })
+
 
 })(window.jQuery);
 
